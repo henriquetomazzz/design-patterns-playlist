@@ -1,1 +1,2 @@
-# design-patterns-playlist
+# Design Patterns Playlist
+//TODO: adicionar documentação
