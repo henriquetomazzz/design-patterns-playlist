@@ -1,7 +1,8 @@
 package controller;
 
-//TODO: adicionar comentários explicando melhor o código;
+/*
+ * Interface do padrão Command. Cada comando executa uma ação no receiver.
+ */
 public interface Command {
-
     void execute();
 }

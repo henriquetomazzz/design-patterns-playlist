@@ -1,11 +1,16 @@
 package controller;
 
-//TODO: adicionar comentários explicando melhor o código;
 import model.MusicPlayer;
 
+/*
+ * Comando concreto para avançar para a próxima música.
+ */
 public class NextCommand implements Command {
-    private MusicPlayer player;
-    public NextCommand(MusicPlayer player) { this.player = player; }
+    private final MusicPlayer player;
+
+    public NextCommand(MusicPlayer player) {
+        this.player = player;
+    }
 
     @Override
     public void execute() {

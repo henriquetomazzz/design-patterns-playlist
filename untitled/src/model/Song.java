@@ -1,11 +1,20 @@
 package model;
 
-//TODO: adicionar comentários explicando melhor o código;
+/*
+ * Representa uma música com título, artista e duração (em segundos).
+ * Esta é uma classe simples que serve como modelo de dados.
+ */
 public class Song {
-    private String title;
-    private String artist;
-    private int duration;
+    private String title;  // Nome da música
+    private String artist; // Nome do artista
+    private int duration;  // Duração da música em segundos
 
+    /*
+     * Construtor da classe Song
+     * @param title   Nome da música
+     * @param artist  Nome do artista
+     * @param duration Duração da música em segundos
+     */
     public Song(String title, String artist, int duration) {
         this.title = title;
         this.artist = artist;

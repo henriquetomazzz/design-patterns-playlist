@@ -1,14 +1,25 @@
 package model;
 
-//TODO: adicionar comentários explicando melhor o código;
 import java.util.List;
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
+/*
+ * Estratégia de reprodução aleatória (embaralhada).
+ * Escolhe uma próxima música diferente da atual, quando possível.
+ */
 public class ShufflePlayback implements PlaybackStrategy {
-    private Random random = new Random();
+
     @Override
-    public Song nextSong(List<Song> playlist, int currentIndex) {
-        if (playlist.isEmpty()) return null;
-        return playlist.get(random.nextInt(playlist.size()));
+    public Song nextSong(List<Song> songs, int currentIndex) {
+        if (songs == null || songs.isEmpty()) return null;
+        if (songs.size() == 1) return songs.get(0);
+
+        int nextIndex;
+        // sorteia até ser diferente do índice atual
+        do {
+            nextIndex = ThreadLocalRandom.current().nextInt(songs.size());
+        } while (nextIndex == currentIndex);
+
+        return songs.get(nextIndex);
     }
 }
