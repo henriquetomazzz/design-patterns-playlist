@@ -113,4 +113,4 @@ Durante a execução, você pode digitar no console:
 ---
 
 ## 👨‍💻 Autor
-Projeto desenvolvido por **[Seu Nome Aqui]** para a disciplina de Padrões de Projeto.  
+Projeto desenvolvido por **Carlos Henrique Tomaz da Silva** para a disciplina de Padrões de Projeto.  
